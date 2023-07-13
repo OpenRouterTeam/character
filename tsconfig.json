@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "noEmit": true,
+    "declaration": true,
+    "declarationMap": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "inlineSources": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "preserveWatchOutput": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "allowJs": true,
+    "incremental": true,
+    "resolveJsonModule": true,
+    "verbatimModuleSyntax": true,
+    "tsBuildInfoFile": ".tsbuildinfo",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowImportingTsExtensions": true,
+    "moduleResolution": "bundler",
+    "module": "ESNext",
+    "target": "ESNext",
+    "composite": false
+  },
+  "exclude": ["node_modules"],
+  "include": ["src/**/*.ts"]
+}
