@@ -62,10 +62,14 @@ export class Character {
 
   constructor(
     public metadata: CharacterMetadata,
-    fallbackAvatar?: string
-  ) {
-    if (metadata.avatar === 'none') {
-      metadata.avatar = fallbackAvatar ?? '';
+    private fallbackAvatar = ''
+  ) {}
+
+  get avatar() {
+    if (!!this.metadata.avatar && this.metadata.avatar !== 'none') {
+      return this.metadata.avatar;
+    } else {
+      return this.fallbackAvatar;
     }
   }
 
